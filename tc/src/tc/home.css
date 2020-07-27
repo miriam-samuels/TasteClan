@@ -1,0 +1,416 @@
+/* div .body section{
+    margin: 30px 0px 0px 0px;
+} */
+.body div h2{
+    color: #fe724e;
+    text-align: center;
+}
+
+.menu{
+    position: relative;
+}
+.menuBar{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    background-color: #fe724e;
+    z-index: 1;
+}
+ .menuBar div {
+    display: inline-block;
+}
+.menuBar .logo{
+    width: 80px;
+    margin: 5px 0px;
+}
+.menuBar .cart{
+    float: right;
+    margin: 8px 5px 0px 5px;
+}
+.cart button{
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #282B30;
+    color: #fff;
+    font-size: 15px;
+}
+ .navBar .drpBtn{
+    width: 35px;
+    padding: 2px 8px;
+}
+
+.navBar ul {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 40%;
+    display: none;
+}
+.navBar ul li{
+    display: block;
+    margin-bottom: 1px;
+    padding: 8px;
+    background-color: #fff;
+}
+.navBar ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fe724e;
+}
+
+.navBar ul li:hover{
+    background-color: #2B2830;
+}
+.hero{
+    position: relative;
+    display: block;
+    background-image: url("../tc/pictures/HERO_BG.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+}
+.hero::before, .ads::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: #000;
+    opacity: 0.4;
+}
+.top .hero .heroWord{
+    position: absolute; 
+    width: 85%;
+    text-align: center;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.top .hero .heroWord p{
+    animation: zoom 3s linear;
+}
+.hero button{
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fe724e;
+    color: #fff;
+    font-size: 15px;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.5);
+    
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.howItWorks {
+    position: relative;
+}
+.howItWorks .process figure img{
+    box-shadow: 0.1px 0.1px 5px 0.1px #d8d8d8;   
+    width: 60px;
+    height: 80px;
+    border-radius: 100px;
+    padding: 20px;
+}
+.howItWorks .process .how{
+    display: inline-block;
+    margin: 10px 0 10px 15px ;
+}
+.howItWorks .process figcaption{
+    position: absolute;
+    right: 2%;
+    width: 50%;
+} 
+.topRes .slider{
+    width: 90%;
+    margin: 20px auto; 
+}
+.topRes .slider ul{
+    white-space: nowrap;
+    padding: 0px;
+    border: 2px solid #fe724e;
+    border-radius: 5px;
+    overflow-x: auto;
+    
+}
+.topRes .slider ul li {
+    width: 60px;
+    text-align: center;
+    display: inline-block;
+    list-style-type: none;
+    margin:14px 10px;
+    background-color: #fe724e;
+    padding: 12px;
+    border-radius: 5px;
+}
+.topRes .slider ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.dot1{
+    width: 35px;
+    height: 40px;
+    position: absolute;
+    left : 0%;
+}
+.dot2{
+    width: 35px;
+    height: 40px;
+    position: absolute;
+    right : 0%;
+}
+.fdOrder{
+    text-align: center;
+}
+.fdOrder p{
+    color: #fe724e;
+    line-height: 0;
+    font-size: 15px;
+}
+.fdOrder .locator input,.fdOrder .locator button{
+    padding: 7px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #d8d8d8;
+    color: #fff;
+   
+}
+.fdOrder .locator button{
+    background-color: #fe724e;
+}
+.fdOrder figure{
+    box-shadow: 0.1px 0.1px 5px 0.1px rgb(194, 191, 191);   
+    margin: 30px auto;
+    width: 90%;
+}
+.fdOrder figure img{
+    width: 100%;
+    height: 200px;
+    filter: brightness(0.8);
+}
+
+.fdOrder figure figcaption b{
+    color:#fe724e;
+}
+
+.fdOrder figure figcaption span{
+    color: #000;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.fdOrder div button{
+    background-color:#fe724e;
+    color: #fff;
+    border: none;
+    padding: 10px;
+}
+.cusrev{
+    margin: 30px 0px 0px 0px;
+}
+ .ads{
+    position: relative;
+    background-image: url("./pictures/ADVERT_BG.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 0px;
+    width: 100%;
+}
+.ads .message{
+    position: relative;
+    margin: auto;
+    width: 75px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #ffc42b;
+    font-weight:bolder;
+    padding: 30px 20px;
+}
+
+.cusrev div .slider{
+    color: #fff;
+    height: 205px;
+    text-align: left;
+    background-color: #fe724e;
+}
+.cusrev div h3{
+    margin: 0;
+    padding:20px 0px; 
+    text-align: center;
+}
+.cusrev div.review{
+    position: relative;
+}
+.cusrev div .slider ul{
+    margin: 0px;
+    padding: 0px;
+}
+.cusrev div .slider ul li{
+    list-style-type: none;
+    margin: auto;
+    padding: 10px 10px;
+    width: 80%;
+    height: 75px;
+    border-radius: 9px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+} 
+.cusrev div .slider  button{
+    background-color: #fff;
+    color: #fe724e;
+    border: none;
+    margin: 5px 0px;
+    padding: 5px;
+    font-weight: bold;
+}
+.prev,.next{
+    background-color:transparent;
+    border: none;
+    color:#fff;
+    font-weight: bold;
+    min-width: 20px;
+    min-height: 40px;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+.prev:hover,.next:hover{
+    color: #fe724e;
+    background: #000;
+}
+.prev{
+    text-align: left;
+    left: 0;
+}
+.next{
+    text-align: right;
+    right: 0;
+}
+section.footer{
+    text-align: center;
+
+}
+.footer div{
+    padding: 20px 0px;
+}
+.footer div p,.footer div b{
+    font-size: 13px;
+}
+.patner{
+    background-color: #ffc42b;
+}
+.footer .patner button{
+    background-color:#282B30;
+    border: none;
+    border-radius:5px ;
+    color: #fff;
+    padding: 8px;
+}
+.footer .newsletter{
+    line-height: 10px;
+    background-color: #fff;
+
+}
+.footer .newsletter button{
+    background-color:#fe724e;
+    color: #fff;
+    border: none;
+    padding: 8px 10px;
+}
+.footer div input{
+    padding: 7px;
+    border-radius:5px ;
+    border: 1px solid #d8d8d8;
+    margin-right: 10px;
+}
+.credits{
+    background-color: #fe724e;
+    padding:20px 0px; 
+    text-align: center;
+}
+
+.credits p, .credits small{
+    color: #fff;
+    line-height: 0px;
+
+}
+
+/* for bigger screen */
+@media (min-width:600px){
+    .navBar .drpBtn{
+        display: none;
+    }
+    .navBar ul{
+        display: block;
+        top: 10%;
+        left: 20%;
+    }
+    .navBar ul li{
+        display: inline-block;
+        background-color: transparent;
+    }
+    .navBar ul li a{
+        color: #fff;
+        font-size: 18px;
+    }
+    .cart button{
+        font-size: 17px;
+    }
+    .top .hero .heroWord h1{
+        font-size: 32px;
+    }
+    .top .hero .heroWord p{
+        font-size: 21px;
+    }
+    .howItWorks {
+        position: relative;
+    }
+    .howItWorks .process{
+        background-color: #fe724e;
+    }
+    .howItWorks .process figure img{
+        box-shadow: none; 
+        width: 80px;
+        height: 80px;
+        border-radius: 0px;
+    }
+    .howItWorks .process div{
+        width: 24.5%;
+        display: inline-block;
+        margin:  0px ;
+    }
+    .howItWorks .process figure{
+        display: block;
+    }
+    .howItWorks .process figcaption{
+        position: relative;
+        width: 90%;
+        text-align: center;
+        color: #fff;
+        margin: 0px;
+    } 
+    .fdOrder figure{
+        display: inline-block;
+        margin: 30px 10px;
+        width: 30%;
+    }
+    .footer div p,.footer div b,.cusrev {
+        font-size: 20px;
+    }
+}
+@media (min-width:1200px){
+
+}

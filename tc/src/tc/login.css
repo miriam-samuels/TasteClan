@@ -1,0 +1,86 @@
+.login {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .login .fbd{
+    position: relative;
+    z-index: 1;
+    color: black; 
+    background-color: white;     
+    margin:10px auto ;
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0.1px 0.1px 5px 0.1px rgb(194, 191, 191); 
+  }
+  .fbd form input{
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 3px;
+  }
+
+  .fbd button{
+    margin: 10px;
+    color: white;
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(124, 120, 120);
+  }
+  .fbd .submit{
+    background-color: #FE724E;
+  }
+  /* why it still works*/
+ .fbd p,.fbd a,.fbd span{
+    text-align: left;
+    margin-left: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+  }
+.fbd .sign {
+  color: #FE724E;
+  font-weight: bold;
+}
+.fbd button img{
+  padding: 0px 10px;
+
+}
+.sticker{
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+}
+  .sticker {
+    animation: spin infinite 20s linear;
+
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    
+  }
+  to {
+    transform: rotate(360deg);
+    
+  }
+}
+.fbd form .agree{
+  width: 10%;
+}
+.login .blob3{
+  position: absolute;
+  right: 0%;
+ /* top:4%; */
+  width: 100px;
+ 
+}
+.login .blob4{
+  position: absolute;
+  left: 0%;
+  bottom: -6%;
+  width: 100px;
+}
