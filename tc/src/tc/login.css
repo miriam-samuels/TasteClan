@@ -1,22 +1,37 @@
+
 .login {
-    max-width: 100%;
-    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-bottom: 40px;
+    overflow: scroll;
+
+
+  }
+  .dots{
+    width: 100px;
+  }
+  .logoB{
+    width: 160px;
+    height: 30px;
   }
   .login .fbd{
     position: relative;
+    margin:10px auto;
+    padding: 25px 0px;
     z-index: 1;
     color: black; 
     background-color: white;     
-    margin:10px auto ;
-    padding: 10px;
-    width: 80%;
+    width: calc(50% + 130px);
     text-align: center;
     box-shadow: 0.1px 0.1px 5px 0.1px rgb(194, 191, 191); 
   }
   .fbd form input{
     width: 80%;
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
     border: 1px solid gray;
     border-radius: 3px;
   }
@@ -25,10 +40,13 @@
     margin: 10px;
     color: white;
     width: 80%;
+    height: 40px;
     padding: 10px;
     border: none;
     border-radius: 3px;
     background-color: rgb(124, 120, 120);
+    font-size: 14px;
+    font-weight: bolder;
   }
   .fbd .submit{
     background-color: #FE724E;
@@ -39,7 +57,7 @@
     margin-left: 5px;
     text-decoration: none;
     color: black;
-    font-size: 13px;
+    font-size: 15px;
   }
 .fbd .sign {
   color: #FE724E;
@@ -53,6 +71,7 @@
   position: fixed;
   bottom: 2%;
   right: 2%;
+  z-index: 1;
 }
   .sticker {
     animation: spin infinite 20s linear;
@@ -69,18 +88,83 @@
   }
 }
 .fbd form .agree{
-  width: 10%;
+  width: 20px;
+ height: 20px;
 }
 .login .blob3{
   position: absolute;
   right: 0%;
- /* top:4%; */
-  width: 100px;
+  width: 120px;
+
  
 }
 .login .blob4{
   position: absolute;
   left: 0%;
-  bottom: -6%;
-  width: 100px;
+  bottom: 0%;
+  width: 120px;
 }
+@media (min-width:450px){
+  .login .blob3{
+    width: 160px;
+  }
+  .login .blob4{
+    width: 160px;
+  }
+  .fbd p,.fbd a,.fbd span{
+    font-size: 20px;
+  }
+  .fbd form input{
+    font-size: 20px;
+  }
+  .fbd button{
+    font-size: 18px;
+  }
+  .fbd form .agree{
+    width: 10%;
+   height: 25px;
+  }
+}
+@media (min-width:700px){
+  .fbd form input{
+    font-size: 20px;
+    padding: 10px;
+  }
+  .login .fbd{
+    width: 48%;
+  }
+  .dots{
+    width: 200px;
+  }
+  .social{
+    width: 20px;
+    height: 20px;
+  }
+  .logoB{
+    width: 200px;
+    height: 45px;
+  }
+  .fbd button{
+    font-size: 18px;
+    height: 45px;
+  }
+  .fbd p,.fbd a,.fbd span{
+    font-size: 18px;
+  }
+  .login .blob3{
+    width: 240px;
+  }
+  .login .blob4{
+    width: 240px;
+  }
+}
+@media (min-width:1100px){
+  .login .fbd{
+    width: 40%;
+  }
+  .fbd button{
+    font-size: 20px;
+    height: 45px;
+  }
+}
+
