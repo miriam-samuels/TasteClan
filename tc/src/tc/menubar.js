@@ -28,11 +28,11 @@ class menubar extends Component {
                             <li><Link to="/blog">Blog</Link></li>
                             <li><Link to="/about">About</Link></li>
                             <li><Link to="/contact">Contact Us</Link></li>
-                            {/* <li><Link to="/login">Sign in</Link></li> */}
+                            <li><Link to="/patner">Patner With Us</Link></li>
                         </ul>
                     </div>
                     <div className="cart ">
-                        <Link to="/login"><button >Login Now</button></Link>
+                        <Link to="/login"><button >Sign Up</button></Link>
                     </div>
                     </div>
             </div>

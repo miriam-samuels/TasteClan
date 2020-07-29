@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Menubar from './menubar';
 
-class blog extends Component {
+class comments extends Component {
     constructor(props) {
         super(props)
         const date = new Date();
@@ -93,4 +93,4 @@ class blog extends Component {
     }
 }
 
-export default blog
+export default comments

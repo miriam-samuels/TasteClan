@@ -93,6 +93,7 @@
 }
 .top .hero .heroWord p{
     animation: zoom 3s linear;
+    font-weight: bolder;
 }
 .hero button{
     padding: 8px 10px;

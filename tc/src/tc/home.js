@@ -248,7 +248,7 @@ class home extends Component {
                 Do you enjoy cooking?<br />
                             Then
                         </b><br />
-                        <button>Partner With Us </button>
+                      <Link to="/patner"> <button>Partner With Us </button></Link> 
                     </div>
                     <div className="newsletter">
                         <h3>Newsletter Sign Up</h3>
