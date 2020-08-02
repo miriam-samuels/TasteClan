@@ -1,12 +1,11 @@
-/* div .body section{
-    margin: 30px 0px 0px 0px;
-} */
+.body{
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 .body div h2{
     color: #fe724e;
     text-align: center;
-}
-.menu{
-    position: relative;
 }
 .menuBar{
     position: fixed;
@@ -20,11 +19,11 @@
 }
 .menuBar .logo{
     width: 80px;
-    margin: 5px 0px;
+    margin: 5px 0px 1px 0px;
 }
 .menuBar .cart{
     float: right;
-    margin: 8px 5px 0px 5px;
+    margin: 6px 5px 0px 5px;
 }
 .cart button{
     padding: 8px 10px;
@@ -36,7 +35,7 @@
 }
  .navBar .drpBtn{
     width: 35px;
-    padding: 2px 8px;
+    margin: 0px 8px;
 }
 
 .navBar ul {
@@ -66,7 +65,7 @@
 .hero{
     position: relative;
     display: block;
-    background-image: url("../tc/pictures/HERO_BG.jpg");
+    background-image: url("../pictures/HERO_BG.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -84,7 +83,7 @@
 }
 .top .hero .heroWord{
     position: absolute; 
-    width: 85%;
+    width: 89%;
     text-align: center;
     color: #fff;
     top: 50%;
@@ -96,7 +95,7 @@
     font-weight: bolder;
 }
 .hero button{
-    padding: 8px 10px;
+    padding: 8px 15px;
     border: none;
     border-radius: 5px;
     background-color: #fe724e;
@@ -116,22 +115,22 @@
 .howItWorks {
     position: relative;
 }
+.howItWorks .process figure{
+    margin: 15px ;
+}
 .howItWorks .process figure img{
     box-shadow: 0.1px 0.1px 5px 0.1px #d8d8d8;   
     width: 60px;
-    height: 80px;
-    border-radius: 100px;
-    padding: 20px;
-}
-.howItWorks .process .how{
-    display: inline-block;
-    margin: 10px 0 10px 15px ;
+    height: 70px;
+    padding: 5px;
 }
 .howItWorks .process figcaption{
-    position: absolute;
-    right: 2%;
-    width: 50%;
+    float: right;
+    width: 60%;
 } 
+.howItWorks .process figcaption p{
+    margin: 0px ;
+}
 .topRes .slider{
     width: 90%;
     margin: 20px auto; 
@@ -141,31 +140,33 @@
     padding: 0px;
     border: 2px solid #fe724e;
     border-radius: 5px;
-    overflow-x: auto;
-    
+    overflow-x: auto;  
 }
 .topRes .slider ul li {
-    width: 60px;
+    width: 100px;
     text-align: center;
     display: inline-block;
     list-style-type: none;
     margin:14px 10px;
     background-color: #fe724e;
-    padding: 12px;
+    padding: 0px 2px;
     border-radius: 5px;
 }
 .topRes .slider ul li a{
     color: #ffffff;
     text-decoration: none;
 }
+.topRes .slider ul li a b{
+    font-size: 40px;
+}
 .dot1{
-    width: 35px;
+    width: 40px;
     height: 40px;
     position: absolute;
     left : 0%;
 }
 .dot2{
-    width: 35px;
+    width: 40px;
     height: 40px;
     position: absolute;
     right : 0%;
@@ -176,23 +177,22 @@
 .fdOrder p{
     color: #fe724e;
     line-height: 0;
-    font-size: 15px;
+    font-size: 13px;
 }
 .fdOrder .locator input,.fdOrder .locator button{
     padding: 7px;
     margin-left: 10px;
     border-radius: 5px;
     border: 1px solid #d8d8d8;
-    color: #fff;
-   
 }
 .fdOrder .locator button{
     background-color: #fe724e;
 }
 .fdOrder figure{
-    box-shadow: 0.1px 0.1px 5px 0.1px rgb(194, 191, 191);   
+    box-shadow: 0.3px 0.3px 5px 0.3px #b8b6b6;   
     margin: 30px auto;
     width: 90%;
+    height: 340px;
 }
 .fdOrder figure img{
     width: 100%;
@@ -203,14 +203,13 @@
 .fdOrder figure figcaption b{
     color:#fe724e;
 }
-
-.fdOrder figure figcaption span{
-    color: #000;
-    display: inline-block;
-    font-size: 30px;
-    font-weight: bolder;
+.fdOrder figure figcaption em{
+    font-size: 13px;
 }
-.fdOrder div button{
+.fdOrder .menus{
+    display: none;
+}
+.fdOrder button{
     background-color:#fe724e;
     color: #fff;
     border: none;
@@ -221,7 +220,7 @@
 }
  .ads{
     position: relative;
-    background-image: url("./pictures/ADVERT_BG.jpg");
+    background-image: url("../pictures/ADVERT_BG.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -312,6 +311,9 @@ section.footer{
 .patner{
     background-color: #ffc42b;
 }
+/* .footer div.patner b{
+    width: 310px;
+} */
 .footer .patner button{
     background-color:#282B30;
     border: none;
@@ -338,15 +340,49 @@ section.footer{
 }
 .credits{
     background-color: #fe724e;
-    padding:20px 0px; 
+    padding: 10px 5px;
     text-align: center;
 }
-
-.credits p, .credits small{
-    color: #fff;
-    line-height: 0px;
-
+.credits .credit{
+    display: inline-block;
+    vertical-align: text-top;
 }
+.credits .lg{
+    width: 20%;
+    text-align: left;
+}
+.credits  .links{
+    width: 79%;
+}
+.credits .links .link{
+    display: inline-block;
+    width: 30%;
+    vertical-align: text-top;
+}
+.credits .connect li{
+    display: inline-block;
+    margin: 3px;
+}
+.credits .credit ul{
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+}
+.credits .credit ul li{
+    list-style-type:none;
+    width: fit-content;
+}
+.credits .credit ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.credits .credit .connect{
+    margin: 0;
+}
+.credits .credit .connect img{
+    width: 20px;
+}
+
 
 /* for bigger screen */
 @media (min-width:600px){
@@ -356,7 +392,7 @@ section.footer{
     .navBar ul{
         display: block;
         top: 10%;
-        left: 20%;
+        left: 13%;
     }
     .navBar ul li{
         display: inline-block;
@@ -380,37 +416,69 @@ section.footer{
     }
     .howItWorks .process{
         background-color: #fe724e;
+        padding: 25px 10px;
+    }
+    .howItWorks .process figure{
+        width: 24.5%;
+        display: inline-block;
+        margin:  0px ;
+        text-align: center;
+        vertical-align: top;
+
     }
     .howItWorks .process figure img{
         box-shadow: none; 
         width: 80px;
         height: 80px;
-        border-radius: 0px;
+        background-color: #fff;
+        border-radius: 100px;
+        padding: 20px;
     }
-    .howItWorks .process div{
-        width: 24.5%;
-        display: inline-block;
-        margin:  0px ;
+    .topRes .slider{
+        width: 80%;
+        margin: 20px auto; 
     }
-    .howItWorks .process figure{
-        display: block;
+    .topRes .slider ul li {
+        width: 150px;
     }
     .howItWorks .process figcaption{
-        position: relative;
-        width: 90%;
-        text-align: center;
+        float: none;
+        width: 98%;
         color: #fff;
-        margin: 0px;
     } 
     .fdOrder figure{
         display: inline-block;
         margin: 30px 10px;
-        width: 30%;
+        width: 29%;
+        vertical-align: top;
     }
     .footer div p,.footer div b,.cusrev {
         font-size: 20px;
     }
 }
+@media (min-width:750px){
+    .navBar ul{
+        left: 23%;
+    }
+    .cusrev div .slider ul li{
+        width:75%;
+    }
+    .topRes .slider ul li {
+        width: 160px;
+    }
+}
 @media (min-width:1200px){
-
+    .navBar ul{
+        left: 33%;
+    }
+    .cusrev div .slider ul li{
+        width:70%;
+    }
+    .topRes .slider{
+        width: 70%;
+        margin: 20px auto; 
+    }
+    .topRes .slider ul li {
+        width: 174px;
+    }
 }

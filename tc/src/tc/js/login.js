@@ -1,11 +1,11 @@
 // Do not forget to change how ypu imported the svg file
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import Fb from './Social/Face_book.svg';
-import G from './Social/Google.svg';
-import Blob from './pictures/Blob_1.svg';
-import Dot from './pictures/Dots.svg';
-import LogoB from './pictures/beside.svg';
+import Fb from '../Social/Face_book.svg';
+import G from '../Social/Google.svg';
+import Blob from '../pictures/Blob_1.svg';
+import Dot from '../pictures/Dots.svg';
+import LogoB from '../pictures/beside.svg';
 
 class login extends Component {
     constructor() {
@@ -37,14 +37,14 @@ class login extends Component {
     render() {
         return (
             <div className="wrapper">
-            <div className="login">
                 <img src ={Dot} alt=""className ="dots"/>
+            <div className="login">
                 <img src ={Blob} alt=""className ="blob3"/>  
                 <div className="fbd">
                 <img src ={LogoB} alt=""className ="logoB"/>
                     <form onSubmit = {this.submitForm} >
                         <input type="email" value={this.state.username} placeholder="email address" onChange={this.emailChange} required />
-                        <input type="password" value={this.state.password} placeholder="password" onChange={this.passChange} required />
+                        <input type="password" value={this.state.password} placeholder="password" onChange={this.passChange} required autoComplete="off"/>
                         {/* eslint-disable-next-line */}
                         <p><Link to=""> Forgot password </Link></p>
                         <button type="submit" className="submit">Login Now</button>

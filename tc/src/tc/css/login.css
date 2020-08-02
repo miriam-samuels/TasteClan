@@ -1,22 +1,17 @@
 
-.login {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding-bottom: 40px;
-    overflow: scroll;
+.wrapper{
+  position: relative;
+  overflow: auto;
 
+}
+.login{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
 
-  }
-  .dots{
-    width: 100px;
-  }
-  .logoB{
-    width: 160px;
-    height: 30px;
-  }
   .login .fbd{
     position: relative;
     margin:10px auto;
@@ -31,7 +26,7 @@
   .fbd form input{
     width: 80%;
     margin: 10px;
-    padding: 15px;
+    padding: 10px;
     border: 1px solid gray;
     border-radius: 3px;
   }
@@ -51,7 +46,13 @@
   .fbd .submit{
     background-color: #FE724E;
   }
-  /* why it still works*/
+  .dots{
+    width: 100px;
+  }
+  .logoB{
+    width: 160px;
+    height: 30px;
+  }
  .fbd p,.fbd a,.fbd span{
     text-align: left;
     margin-left: 5px;
@@ -87,28 +88,27 @@
     
   }
 }
-.fbd form .agree{
+.fbd form #agree{
   width: 20px;
  height: 20px;
 }
-.login .blob3{
+.wrapper .blob3{
   position: absolute;
   right: 0%;
   width: 120px;
-
- 
 }
-.login .blob4{
+.wrapper .blob4{
   position: absolute;
   left: 0%;
   bottom: 0%;
   width: 120px;
+  transform: rotate(180deg);
 }
 @media (min-width:450px){
-  .login .blob3{
+  .wrapper .blob3{
     width: 160px;
   }
-  .login .blob4{
+  .wrapper .blob4{
     width: 160px;
   }
   .fbd p,.fbd a,.fbd span{
@@ -127,11 +127,11 @@
 }
 @media (min-width:700px){
   .fbd form input{
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px;
   }
   .login .fbd{
-    width: 48%;
+    width: 50%;
   }
   .dots{
     width: 200px;
@@ -145,17 +145,19 @@
     height: 45px;
   }
   .fbd button{
-    font-size: 18px;
-    height: 45px;
+    font-size: 15px;
+    height: 40px;
   }
-  .fbd p,.fbd a,.fbd span{
-    font-size: 18px;
+  .fbd p,.fbd a{
+    font-size: 15px;
   }
-  .login .blob3{
-    width: 240px;
+  .wrapper .blob3{
+    width: 250px;
+    right: 5%;
   }
-  .login .blob4{
-    width: 240px;
+  .wrapper .blob4{
+    width: 250px;
+    left: 5%;
   }
 }
 @media (min-width:1100px){
@@ -163,8 +165,8 @@
     width: 40%;
   }
   .fbd button{
-    font-size: 20px;
-    height: 45px;
+    font-size: 17px;
+    height: 40px;
   }
 }
 

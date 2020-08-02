@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Menubar from './menubar';
+import Ordercart from './orderCart';
 
 
 class blog extends Component {
@@ -68,6 +69,7 @@ class blog extends Component {
         return (
             <div className="blog">
                 <Menubar />
+                <Ordercart/>
                 <div className="blogBtn">
                     <button onClick={this.addPost}>Add Post</button>
                     {/* <button onClick={this.sortByLatest}>Latest</button> */}
@@ -84,6 +86,7 @@ class blog extends Component {
                     ))
                 }
                 <div className="post">
+                    {/* <input type="image" /> */}
                     <h4 className="heading">Yellow Rice: Easy recipe for yelllow tumeric rice</h4>
                     <p className="body">
                         The classic Indian yellow rice is usually prepared by boiling

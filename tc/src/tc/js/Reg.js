@@ -1,12 +1,11 @@
 // Do not forget to change how ypu imported the svg file
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import './login.css';
-import Fb from './Social/Face_book.svg';
-import G from './Social/Google.svg';
-import Blob from './pictures/Blob_1.svg';
-import Dot from './pictures/Dots.svg';
-import LogoB from './pictures/beside.svg';
+import Fb from '../Social/Face_book.svg';
+import G from '../Social/Google.svg';
+import Blob from '../pictures/Blob_1.svg';
+import Dot from '../pictures/Dots.svg';
+import LogoB from '../pictures/beside.svg';
 
 class login extends Component {
     constructor(props) {
@@ -16,7 +15,6 @@ class login extends Component {
             fullname:"",
             email: "",
             password: "",
-
         }
     }
     nameChange = (event) => {
@@ -34,6 +32,10 @@ class login extends Component {
             { password: event.target.value }
         )
     }
+    agreementChange = (event) => {
+        event.preventDefault()
+
+    }
     submitForm = (event)=>{
         const {history} = this.props;
         alert(`Welcome to TasteClan ${this.state.fullname}`);
@@ -43,18 +45,18 @@ class login extends Component {
     render() {
         return (
             <div className="wrapper">
-            <div className="login">
                 <img src ={Dot} alt=""className ="dots"/>
-                <img src ={Blob} alt=""className ="blob3"/>
+            <div className="login">
+            <img src ={Blob} alt=""className ="blob3"/>
                 <div className="fbd">
                 <img src ={LogoB} alt=""className ="logoB"/>
                     
                     <form onSubmit = {this.submitForm}>
                         <input type="text" value={this.state.fullname} placeholder="full name" onChange={this.nameChange} required />
                         <input type="email" value={this.state.username} placeholder="email address" onChange={this.emailChange} required />
-                        <input type="password" value={this.state.password} placeholder="password" onChange={this.passChange} required />
-                      <br/><input type ="checkbox" className = "agree" checked required />
-                        <span>I agree to the <b> terms and condition</b></span>
+                        <input type="password" value={this.state.password} placeholder="password" onChange={this.passChange} autoComplete="on" required />
+                      <br/><input type ="checkbox" id = "agree" onChange={this.agreementChange} required />
+                        <label htmlFor="agree">I agree to the <b> terms and condition</b></label>
                         <button type="submit" className="submit">Sign Up</button>
                         <p>I have an account  <Link to ="./Login" className="sign">Login Now</Link></p>
                         <button><img src = {Fb} alt ="fb" className="social"/>Continue with Facebook</button>

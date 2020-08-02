@@ -1,19 +1,19 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import './tc/home.css';
-import './tc/login.css';
-import './tc/others.css';
-import Login from './tc/login.js';
-import Reg from './tc/Reg';
-import Home from './tc/home';
-import Menu from './tc/menu';
-import About from './tc/about';
-import Blog from './tc/blog';
-import Comment from './tc/comments';
-import Addrestaurant from './tc/addRestaurant';
-import AddDriver from './tc/addDriver';
-import Patner from './tc/patner';
-import Contact from './tc/contact';
+import Login from './tc/js/login.js';
+import Reg from './tc/js/Reg';
+import Home from './tc/js/home';
+import Menu from './tc/js/menu';
+import About from './tc/js/about';
+import Blog from './tc/js/blog';
+import Comment from './tc/js/comments';
+import Addrestaurant from './tc/js/addRestaurant';
+import AddDriver from './tc/js/addDriver';
+import Patner from './tc/js/patner';
+import Contact from './tc/js/contact';
+import './tc/css/home.css';
+import './tc/css/login.css';
+import './tc/css/others.css';
 
 
 

@@ -3,8 +3,9 @@ import Menubar from './menubar';
 import Credits from './footer';
 function contact() {
     return (
-        <div className="contact">
+        <div >
             <Menubar/>
+            <div className="contact">
             <div className="getintouch">
             <h3>Get in Touch</h3>
             <p>Call us</p>
@@ -22,12 +23,12 @@ function contact() {
                    <br/> <label>Email Address</label><br/>
                     <input type="email" placeholder="enter your email address" />
                     <br/><label>Your Message</label><br/>
-                    <textarea placeholder="enter your message" rows="7"></textarea>
+                    <textarea placeholder="enter your message" rows="17"></textarea>
                     <button type="submit"> Submit</button>
                 </form>
             </div>
-            <Credits/>
-            
+            </div>
+            <Credits/>  
         </div>
     )
 }
