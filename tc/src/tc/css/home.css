@@ -6,6 +6,7 @@
 .body div h2{
     color: #fe724e;
     text-align: center;
+    margin-top: 30px;
 }
 .menuBar{
     position: fixed;
@@ -116,7 +117,7 @@
     position: relative;
 }
 .howItWorks .process figure{
-    margin: 15px ;
+    margin: 25px 15px ;
 }
 .howItWorks .process figure img{
     box-shadow: 0.1px 0.1px 5px 0.1px #d8d8d8;   
@@ -160,13 +161,13 @@
     font-size: 40px;
 }
 .dot1{
-    width: 40px;
+    width: 38px;
     height: 40px;
     position: absolute;
     left : 0%;
 }
 .dot2{
-    width: 40px;
+    width: 38px;
     height: 40px;
     position: absolute;
     right : 0%;
@@ -191,8 +192,7 @@
 .fdOrder figure{
     box-shadow: 0.3px 0.3px 5px 0.3px #b8b6b6;   
     margin: 30px auto;
-    width: 90%;
-    height: 340px;
+    width: 85%;
 }
 .fdOrder figure img{
     width: 100%;
@@ -344,43 +344,50 @@ section.footer{
     text-align: center;
 }
 .credits .credit{
-    display: inline-block;
     vertical-align: text-top;
+    margin-top: auto;
+    font-size: 12px;
+    padding: 0;
 }
-.credits .lg{
-    width: 20%;
-    text-align: left;
-}
-.credits  .links{
-    width: 79%;
+.credits .links{
+    padding: 0;
+
 }
 .credits .links .link{
     display: inline-block;
-    width: 30%;
+    width: 45%;
     vertical-align: text-top;
+    padding: 0;
 }
 .credits .connect li{
     display: inline-block;
-    margin: 3px;
 }
 .credits .credit ul{
     padding: 0;
-    margin: 0;
-    width: fit-content;
+    margin: 10px 5px;
 }
 .credits .credit ul li{
     list-style-type:none;
-    width: fit-content;
+    line-height: 23px;
 }
 .credits .credit ul li a{
     text-decoration: none;
     color: #fff;
 }
-.credits .credit .connect{
-    margin: 0;
-}
 .credits .credit .connect img{
     width: 20px;
+    margin:0px 15px ;
+}
+.credits .lg img{
+    width: 100px;
+}
+.credits b{
+    color: #fff;
+    font-size: 15px;
+}
+.credits small{
+    color: #fff;
+    font-size: 10px;
 }
 
 

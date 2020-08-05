@@ -8,7 +8,6 @@ import Whatsapp from '../Social/Whatsapp.svg';
 
 function footer() {
     return (
-
         <div className="credits">
             <div className="credit lg">
                 <img src={Icon} alt="Logo" className="logo" /><br/>
@@ -23,37 +22,37 @@ function footer() {
             <div className="credit links">
             <div className="link">
                 <ul>
-                    <li> <b>Links</b></li>
+                    <li> <b>QuickLinks</b></li>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/menu">Menu</Link></li>
                 <li><Link to="/blog">Blog</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
-                <li><Link to="/patner">Patner</Link></li>
                             </ul>
         </div>
         <div className="link">
                 <ul>
                 <li><b>Business</b></li>
                 <li><Link to="/">Order</Link></li>
-                {/* <li><Link to="/menu">Terms & Conditions</Link></li> */}
+                <li><Link to="/menu">Terms and Conditions</Link></li>
                 <li><Link to="/blog">Blog</Link></li>
                 <li><Link to="/about">Privacy</Link></li>
                 <li><Link to="/contact">Advertise</Link></li>
                             </ul>
         </div>
-        <div className="link">
-            
-                <ul>
-                    <li><b>Patner</b></li>
-                <li><Link to="/AddRestaurant">Restaurants</Link></li>
-                <li><Link to="/AddDriver">Drivers</Link></li>
-
-                            </ul>
-        </div>
 
             </div>
-            <p>&copy;copyright 2020 TasteClan All Right Reserved</p>
+            <div className="credit">
+            <div>
+            <ul>
+                <li><b>Patner With Us</b></li>
+            <li><Link to="/AddRestaurant">For Restaurants</Link></li>
+            <li><Link to="/AddDriver">For Drivers</Link></li>
+
+                        </ul>
+    </div>
+            </div>
+            <small>&copy;copyright 2020 TasteClan All Right Reserved</small>
 
             </div>
     )

@@ -8,7 +8,7 @@ import Checkout from '../pictures/checkOut.svg';
 import Eat from '../pictures/eat.svg';
 import Dot from '../pictures/Dots.svg';
 import Ordercart from './orderCart';
-import OrderFood from './orderFoodNearYou';
+import OrderFood from './mealList';
 
 var slideIndex = 0;
 class home extends Component {
@@ -57,7 +57,7 @@ class home extends Component {
 
         return (
             <div className="body">
-                    <Ordercart/>
+                <Ordercart />
                 <section className="top">
                     <Menubar />
                     <div className="hero">
@@ -77,35 +77,35 @@ class home extends Component {
                     </h2>
                     </div>
                     <div className="process">
-                      
-                            <figure >
-                                <img src={Search} alt="" />
-                                <figcaption>
-                                    <b>Search</b>
-                                    <p>select the restaurant of your choice</p>
-                                </figcaption>
-                            </figure>
-                            <figure >
-                                <img src={Order} alt="" />
-                                <figcaption >
-                                    <b>Order</b>
-                                    <p>choose your wanted delicious meal</p>
-                                </figcaption>
-                            </figure>
-                            <figure>
-                                <img src={Checkout} alt="" />
-                                <figcaption >
-                                    <b>Check Out</b>
-                                    <p>pay via card, transfer or cash on delivery</p>
-                                </figcaption>
-                            </figure>
-                            <figure >
-                                <img src={Eat} alt="" />
-                                <figcaption>
-                                    <b>Eat</b>
-                                    <p>enjoy your food to your heart content</p>
-                                </figcaption>
-                            </figure>
+
+                        <figure >
+                            <img src={Search} alt="" />
+                            <figcaption>
+                                <b>Search</b>
+                                <p>select the restaurant of your choice</p>
+                            </figcaption>
+                        </figure>
+                        <figure >
+                            <img src={Order} alt="" />
+                            <figcaption >
+                                <b>Order</b>
+                                <p>choose your wanted delicious meal</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src={Checkout} alt="" />
+                            <figcaption >
+                                <b>Check Out</b>
+                                <p>pay via card, transfer or cash on delivery</p>
+                            </figcaption>
+                        </figure>
+                        <figure >
+                            <img src={Eat} alt="" />
+                            <figcaption>
+                                <b>Eat</b>
+                                <p>enjoy your food to your heart content</p>
+                            </figcaption>
+                        </figure>
                     </div>
                 </section>
                 <section className="topRes">
@@ -136,7 +136,7 @@ class home extends Component {
                             <button type="submit">Find Me</button>
                         </form>
                     </div>
-                  <OrderFood/>
+                    <OrderFood />
                     <Link to="/menu"><button>View More</button></Link>
                 </section>
                 <section className="cusrev">
@@ -174,7 +174,7 @@ class home extends Component {
                         <b>
                             Are you a restaurant owner? Do you sell food and need a way to deliver to
                             customers? Do you own a vehicle and intrested in goods delivery?
-                Do you enjoy cooking?<br />
+                            Do you enjoy cooking?<br />
                             Then
                         </b><br />
                         <Link to="/patner"> <button>Partner With Us </button></Link>

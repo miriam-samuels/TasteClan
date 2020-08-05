@@ -5,26 +5,66 @@
 }
 /* menu */
 .menuIntro{
-    margin-top: 60px;
+    margin-top: 47px;
+}
+.menuIntro img{
+    width: 100%;
+    height: 250px;
+    margin: 0;
+}
+.menuIntro div{
+    position: absolute;
+    top: 9%;
+    width: 73%;
+}
+.menuIntro div p{
+    font-size: 12px;
+    line-height: 25px;
 }
 .filters{
     width: 200px;
 }
 .filters ul{
     display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    width: 200px;
 }
 .filters ul{
     padding: 0;
 }
 .filters ul li{
     list-style-type: none;
+    font-size: 11px;
+    margin: 5px ;
+}
+.filters ul li input{
+    margin: 5px 0;
+}
+.filters ul li label{
+    padding: 0px 5px;
+}
+.mealList{
+    position: relative;
+    height: 860px;
 }
 .menuBody b{
     padding: 5px;
 }
-.menuBody img{
-    background-color: #282630;
+.menuNav{
+    width: 95%;
+    margin: 10px auto;
+}
+.menuNav button{
+    margin: 0px 5px;
+}
+.menuNav select{
+    margin: 0px 5px;
+}
+.menuBody .menuNav img{
     width: 20px;
+    height: 17px;
     margin: 0px 5px;
 }
 .menuBody .mealList figure{
@@ -36,7 +76,7 @@
     text-align: center;
 }
 .menuBody .mealList figure img{
-    width: 90%;
+    width: 100%;
     height: 120px;
     filter: brightness(0.8);
     border-top-left-radius: 10px;
@@ -48,7 +88,7 @@
     font-size: 13px;
 }
 .menuBody .mealList figure figcaption em{
-    font-size: 10px;
+    font-size: 11px;
 }
 .menuBody .mealList p{
     color: #fe724e;
@@ -86,7 +126,7 @@
     font-weight: bolder;
 }
 .post .body{
-    font-size: 11px;
+    font-size: 14px;
 }
 .post textarea{
     width: 98%;
@@ -101,6 +141,13 @@
     color: #fff;
     padding: 7px;
     margin:60px 5px 0px 5px;
+}
+.post button{
+    float: right;
+    color: #fe724e;
+    font-weight: bolder;
+    background-color: transparent;
+    border: none;
 }
 
 /* About  */
@@ -157,20 +204,42 @@ div.counter figure figcaption hr{
 
 }
 div.ourTeam figure{
+    position: relative;
     display: inline-block;
-    width: 48%;
+    width: 46%;
     text-align: center;
     margin: 0;
+    margin: 5px;
+
 }
 .ourTeam{
     width: 98%;
     margin: auto;
+
+
 }
 .ourTeam h3{
     text-align: center;  
 }
 .ourTeam figure img{
-    width: 130px;
+    height: 160px;
+    width: 100%;
+
+}
+.ourTeam figcaption{
+    position: absolute;
+    bottom: 0%;
+    color: #fff;
+    background-color: #282630;
+    width: 100%;
+    margin: auto;
+    line-height: 7px;
+    padding-top: 10px;
+    opacity: 0.8;
+}
+.ourTeam figcaption p{
+    color: #ffc42b;
+    font-size: 10px;
 }
 .quote{
     background-color: #ffc42b;
@@ -309,7 +378,7 @@ img.addRes{
     .ourStory figure img{
         margin: 0;
         padding: 0;
-        width: 400px;
+        width: 350px;
     }
     .ourStory figure figcaption{
         float: right;
@@ -318,8 +387,11 @@ img.addRes{
     .ourStory .reverse figcaption{
         float: left;
     }
-    div.counter figure,div.ourTeam figure{
+    div.counter figure{
         width: 24%;
+    }
+    div.ourTeam figure{
+        width: 23%;
     }
     .contact div{
         display: inline-block;
@@ -337,4 +409,18 @@ img.addRes{
         width: 40%;
         margin: 20px;
     }
+    .menuNav button{
+        display: none;
+    }
+    .menuBody .mealList .side{
+        float: right;
+        margin-top: 30px;
+        width: 60%;
+    }
+    .filters ul{
+        display: block;
+        background-color: #fff;
+        width: 30%;
+    }
+    
 }

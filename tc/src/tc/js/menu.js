@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import Drp from '../pictures/Dropdown.svg';
+import List from '../pictures/List.svg';
+import Grid from '../pictures/Grid.svg';
+import Menubg from '../pictures/MENU_BG.jpg';
 import Menubar from './menubar';
 import Credits from './footer';
-import Meal from './orderFoodNearYou';
+import Meal from './mealList';
 
  class menu extends Component {
     constructor(props) {
@@ -32,6 +34,8 @@ import Meal from './orderFoodNearYou';
             <div>
                 <Menubar/>
                 <div className="menuIntro">
+                <img src={Menubg} alt=""/>
+                <div>
                     <h2>Menu</h2>
                     <p>Browse through our top and exclusive restaurants
                         where we've gathered foods of the highest quality and
@@ -39,16 +43,18 @@ import Meal from './orderFoodNearYou';
                         so that you can know what you are ordering <br/>
                         So, let's start shopping!!!
                     </p>
-                </div>
+                </div></div>
                 <div className="menuBody">
+                    <div className="menuNav">
                 <button className="filter" onClick={this.showPanel}><b>Filters</b></button>
                 <b>All Meals</b>
-                <img src={Drp} alt=""/>
-                <img src={Drp} alt=""/>
+                <img src={List} alt=""/>
+                <img src={Grid} alt=""/>
                 <select>
                     <option>Sort by</option>
                 </select>
-                <div className="filters">
+                </div>
+                <div className="filters ">
                     <ul>
                         <li><b>Location</b><br/>
                         <input type="search" placeholder="search your area"/><br/>
