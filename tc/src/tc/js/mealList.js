@@ -11,7 +11,7 @@ import Food6 from '../pictures/FOOD_06.jpg';
 
 function mealList() {
         return (
-            <div className="side">
+            <>
                         <figure>
                             <img src={Food1} alt="" />
                             <figcaption>
@@ -68,7 +68,7 @@ function mealList() {
                             </figcaption>
                         </figure>
                     </span>
-            </div>
+            </>
         )
     }
 

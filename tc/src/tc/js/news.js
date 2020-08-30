@@ -1,6 +1,6 @@
 import React from 'react'
 import Post from './addPost.js'
-function blog() {
+function news() {
     return (
         <div>
             <Post/>
@@ -8,4 +8,4 @@ function blog() {
     )
 }
 
-export default blog
+export default news

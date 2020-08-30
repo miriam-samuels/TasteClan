@@ -1,8 +1,8 @@
 // Do not forget to change how ypu imported the svg file
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import Fb from '../Social/Face_book.svg';
-import G from '../Social/Google.svg';
+import Fb from '../pictures/Social/Face_book.svg';
+import G from '../pictures/Social/Google.svg';
 import Blob from '../pictures/Blob_1.svg';
 import Dot from '../pictures/Dots.svg';
 import LogoB from '../pictures/beside.svg';
@@ -50,7 +50,7 @@ class login extends Component {
                         <button type="submit" className="submit">Login Now</button>
                         <p>Don't have an account ? <Link to = "./Reg" className="sign">Sign Up</Link></p>
                         <button ><img src = {Fb} alt ="fb" className="social"/>Continue with Facebook</button>
-                        <button ><img src = {G} alt ="g" className="social"/>Continue with Google</button>
+                        <button><img src = {G} alt ="g" className="social"/>Continue with Google</button>
                     </form>
                 </div>
                 <img src ={Blob} alt="" className ="blob4"/>            

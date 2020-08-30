@@ -14,7 +14,7 @@ class addRestaurant extends Component {
         return (
             <div className="addRestaurant">
                 <Menubar />
-                <div className="restaurantInfo">
+                <div className="restaurantInfo side">
                     <img src={Res} alt="" className="addRes" />
                     <h2 className="addRes">Add Restaurant</h2>
                     <form>
@@ -86,7 +86,7 @@ class addRestaurant extends Component {
                         <button type="submit">Submit</button>
                     </form>
                 </div>
-                <div className="addProcess">
+                <div className="addProcess side">
                     <h2>How it Works</h2>
                     <img src={FillForm} alt="" />
                     <br /> <b>Fill Form</b><br />

@@ -1,10 +1,10 @@
 import React from 'react'
 import Icon from '../pictures/Icon.svg';
 import { Link } from 'react-router-dom';
-import Fb from '../Social/Facebook.svg';
-import Ig from '../Social/Instagram.svg';
-import Tweet from '../Social/Twitter.svg';
-import Whatsapp from '../Social/Whatsapp.svg';
+import Fb from '../pictures/Social/Facebook.svg';
+import Ig from '../pictures/Social/Instagram.svg';
+import Tweet from '../pictures/Social/Twitter.svg';
+import Whatsapp from '../pictures/Social/Whatsapp.svg';
 
 function footer() {
     return (
@@ -43,16 +43,16 @@ function footer() {
 
             </div>
             <div className="credit">
-            <div>
+ 
             <ul>
                 <li><b>Patner With Us</b></li>
             <li><Link to="/AddRestaurant">For Restaurants</Link></li>
             <li><Link to="/AddDriver">For Drivers</Link></li>
 
                         </ul>
-    </div>
+
             </div>
-            <small>&copy;copyright 2020 TasteClan All Right Reserved</small>
+            {/* <p>&copy;copyright 2020 TasteClan All Right Reserved</p> */}
 
             </div>
     )

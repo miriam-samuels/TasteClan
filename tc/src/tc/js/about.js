@@ -5,6 +5,10 @@ import Img1 from '../pictures/About_Pic1.jpg';
 import Img2 from '../pictures/About_Pic2.jpg';
 import Img3 from '../pictures/About_Pic3.jpg';
 import Img4 from '../pictures/About_Pic4.jpg';
+import Team1 from '../pictures/Team (1).JPG';
+import Team2 from '../pictures/Team (2).JPG';
+import Team3 from '../pictures/Team (3).JPG';
+import Team4 from '../pictures/Team (4).JPG';
 
 
 function about() {
@@ -30,7 +34,7 @@ function about() {
                 <div className="ourStory">
                     <h4>Our Story</h4>
                     <figure>
-                        <img src={Img1} alt=""/>
+                       <div><img src={Img1} alt=""/></div> 
                         <figcaption>
                             <h4>Ideas</h4>
                             <p>It all started fro a single idea. We wanted to create a place that
@@ -39,7 +43,7 @@ function about() {
                         </figcaption>
                     </figure>
                     <figure className="reverse">
-                    <img src={Img2} alt=""/>
+                    <div><img src={Img2} alt=""/></div>
                         <figcaption>
                             <h4>Develop</h4>
                             <p>The website was first designed and developed in order to help students get their food easily
@@ -48,16 +52,16 @@ function about() {
                         </figcaption>
                     </figure>
                     <figure>
-                    <img src={Img3} alt=""/>
+                    <div><img src={Img3} alt=""/></div>
                         <figcaption>
-                            <h4>Opening</h4>
+                            <h4>Launchimg</h4>
                             <p>After undergoing to necessary preparations to launch TasteClan. We needed to get more experienced
                                 people on our side to ensure a safe and continuous progress
                             </p>
                         </figcaption>
                     </figure>
                     <figure className="reverse">
-                    <img src={Img4} alt=""/>
+                    <div><img src={Img4} alt=""/></div>
                         <figcaption>
                             <h4>Today</h4>
                             <p>We are more devoted and dedicated to our customers, making sure we provide all services
@@ -89,35 +93,36 @@ function about() {
             </div>
             <div className="ourTeam">
                 <h3>Our Team</h3>
+                <div>
             <figure>
-            <img src={Img4} alt=""/>
+            <img src={Team3} alt=""/>
                     <figcaption>
                     <b>Ayomide</b>
                     <p>Orders Made</p>
                     </figcaption>
                 </figure>
                 <figure>
-                <img src={Img4} alt=""/>
+                <img src={Team1} alt=""/>
                     <figcaption>
                     <b>Fola</b>
                     <p>Food Delivered</p>  
                     </figcaption>
                 </figure>
                 <figure>
-                <img src={Img4} alt=""/>
+                <img src={Team2} alt=""/>
                     <figcaption>
                     <b>Miriam</b>
                     <p>Clients </p>
                     </figcaption>
                 </figure>
                 <figure>
-                <img src={Img4} alt=""/>
+                <img src={Team4} alt=""/>
                     <figcaption>
                     <b>Bami</b>
                     <p>Clients </p>
                     </figcaption>
                 </figure>
-                <figure>
+                {/* <figure>
                 <img src={Img4} alt=""/>
                     <figcaption>
                     <b>Ire</b>
@@ -137,7 +142,8 @@ function about() {
                     <b>Demi</b>
                     <p>Clients </p>
                     </figcaption>
-                </figure>
+                </figure>*/}
+                </div> 
             </div>
             <div className="quote">
                 <h3>Nees a Food Scientist expertise</h3>

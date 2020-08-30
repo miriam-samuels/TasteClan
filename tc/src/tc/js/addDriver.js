@@ -12,11 +12,11 @@ import Map from './map';
 class addDriver extends Component {
     render() {
         return (
-            <div className="addRestaurant">
+            <div className="addDriver">
                 <Menubar />
-                <div className="restaurantInfo">
-                    <img src={Delivery} alt="" className="addRes" />
-                    <h2 className="addRes">Add Driver</h2>
+                <div className="driverInfo side">
+                    <img src={Delivery} alt="" className="addDri" />
+                    <h2 className="addDri">Add Driver</h2>
                     <form>
                         <br /> <b>Basic Info</b><br />
                         <br /><label>Driver Name*</label><br />
@@ -60,7 +60,7 @@ class addDriver extends Component {
                         <button type="submit">Submit</button>
                     </form>
                 </div>
-                <div className="addProcess">
+                <div className="addProcess side">
                     <h2>How it Works</h2>
                     <img src={FillForm} alt="" />
                     <br /> <b>Fill Form</b><br />

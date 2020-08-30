@@ -1,8 +1,8 @@
 // Do not forget to change how ypu imported the svg file
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import Fb from '../Social/Face_book.svg';
-import G from '../Social/Google.svg';
+import Fb from '../pictures/Social/Face_book.svg';
+import G from '../pictures/Social/Google.svg';
 import Blob from '../pictures/Blob_1.svg';
 import Dot from '../pictures/Dots.svg';
 import LogoB from '../pictures/beside.svg';

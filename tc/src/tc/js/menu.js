@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import List from '../pictures/List.svg';
-import Grid from '../pictures/Grid.svg';
-import Menubg from '../pictures/MENU_BG.jpg';
+// import List from '../pictures/List.svg';
+// import Grid from '../pictures/Grid.svg';
 import Menubar from './menubar';
 import Credits from './footer';
 import Meal from './mealList';
@@ -12,6 +11,7 @@ import Meal from './mealList';
     
         this.state = {
              show:false,
+             view:"Grid",
         }
     }
     
@@ -29,14 +29,22 @@ import Meal from './mealList';
             })
         }
     }
+    viewChange = (e) =>{
+        this.setState({
+                view: e.target.value,
+})
+    }
     render() {
+        const star = {
+            color: "#ffc42b",
+            fontSize: "15px",
+        }
         return (
             <div>
                 <Menubar/>
                 <div className="menuIntro">
-                <img src={Menubg} alt=""/>
                 <div>
-                    <h2>Menu</h2>
+                    <h3>Menu</h3>
                     <p>Browse through our top and exclusive restaurants
                         where we've gathered foods of the highest quality and
                         freshness. Eacg has full description regarding the food 
@@ -48,13 +56,14 @@ import Meal from './mealList';
                     <div className="menuNav">
                 <button className="filter" onClick={this.showPanel}><b>Filters</b></button>
                 <b>All Meals</b>
-                <img src={List} alt=""/>
-                <img src={Grid} alt=""/>
-                <select>
-                    <option>Sort by</option>
+                {/* <img src={List} alt=""/> */}
+                {/* <img src={Grid} alt=""/> */}
+                <select value ={this.state.view} onChange={this.viewChange}>
+                    <option>Grid</option>
+                    <option>List</option>
                 </select>
                 </div>
-                <div className="filters ">
+                <div className="filters side">
                     <ul>
                         <li><b>Location</b><br/>
                         <input type="search" placeholder="search your area"/><br/>
@@ -91,15 +100,15 @@ import Meal from './mealList';
                         <input type="checkbox" id="four"/><label htmlFor="four">80% - 95% off</label><br/>
                         </li>
                         <li><b>Ratings</b><br/>
-                        <input type="checkbox" id="star5"/><label htmlFor="star5">&#9733;&#9733;&#9733;&#9733;&#9733;</label><br/>
-                        <input type="checkbox" id="star4"/><label htmlFor="star5">&#9733;&#9733;&#9733;&#9733;</label><br/>
-                        <input type="checkbox" id="star3"/><label htmlFor="star3">&#9733;&#9733;&#9733;</label><br/>
-                        <input type="checkbox" id="star2"/><label htmlFor="star2">&#9733;&#9733;</label><br/>
-                        <input type="checkbox" id="star1"/><label htmlFor="star1">&#9733;</label><br/>
+                        <input type="checkbox" id="star5"/><label htmlFor="star5" style={star}>&#9733;&#9733;&#9733;&#9733;&#9733;</label><br/>
+                        <input type="checkbox" id="star4"/><label htmlFor="star5" style={star}>&#9733;&#9733;&#9733;&#9733;</label><br/>
+                        <input type="checkbox" id="star3"/><label htmlFor="star3" style={star}>&#9733;&#9733;&#9733;</label><br/>
+                        <input type="checkbox" id="star2"/><label htmlFor="star2" style={star}>&#9733;&#9733;</label><br/>
+                        <input type="checkbox" id="star1"/><label htmlFor="star1" style={star}>&#9733;</label><br/>
                         </li>
                     </ul>
                 </div>
-                <div className="mealList">
+                <div className="mealList side">
                     <Meal/>
                 </div>
                 </div>

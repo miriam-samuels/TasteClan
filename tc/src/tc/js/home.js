@@ -1,5 +1,7 @@
-import React, { Component } from 'react'
+import React, {Component}  from 'react'
 import { Link } from 'react-router-dom';
+import TopRes from './topResSlider';
+import CustomerReview from './customerReview.js';
 import Menubar from './menubar';
 import Credits from './footer';
 import Search from '../pictures/search.svg';
@@ -10,7 +12,6 @@ import Dot from '../pictures/Dots.svg';
 import Ordercart from './orderCart';
 import OrderFood from './mealList';
 
-var slideIndex = 0;
 class home extends Component {
     constructor(props) {
         super(props)
@@ -35,28 +36,10 @@ class home extends Component {
     subscribed = () => {
         alert("Thank you for subscribing to TasteClan Newsletters,we would gladly update you on any info");
     }
-    showSlides = (n) => {
-        var i;
-        var slides = document.querySelectorAll(".cusrev div .slider ul li");
-        if (n > slides.length) {
-            slideIndex = 1;
-        }
-        if (n < 1) {
-            slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slides[slideIndex - 1].style.display = "block";
-    }
-    componentDidMount() {
-        setTimeout(this.showSlides(slideIndex), 1);
-    }
 
     render() {
-
         return (
-            <div className="body">
+            <div>
                 <Ordercart />
                 <section className="top">
                     <Menubar />
@@ -70,14 +53,12 @@ class home extends Component {
                 </section>
                 <section className="howItWorks">
                     <div>
-                        <img src={Dot} alt="" className="dot1" />
-                        <img src={Dot} alt="" className="dot2" />
-                        <h2>
-                            How It Works?
-                    </h2>
+                        <img src={Dot} alt="" className="dot dot1" />
+                        <img src={Dot} alt="" className="dot dot2" />
+                        <h2>How It Works?</h2>
                     </div>
                     <div className="process">
-
+                    <div>
                         <figure >
                             <img src={Search} alt="" />
                             <figcaption>
@@ -107,76 +88,42 @@ class home extends Component {
                             </figcaption>
                         </figure>
                     </div>
+                    </div>
                 </section>
                 <section className="topRes">
-                    <div>
-                        <h2>Top Restaurants </h2>
-
-                        <div className="slider">
-                            <ul>
-                                <li><Link to=""><b>&spades;</b> Savour</Link></li>
-                                <li><Link to=""><b>&clubs;</b> Chapters</Link></li>
-                                <li><Link to=""><b>&diams;</b> Lezcan</Link></li>
-                                <li><Link to=""><b>&hearts;</b> Mega</Link></li>
-                                <li><Link to=""><b>&#9733;</b> Savour</Link></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <TopRes />
                 </section>
                 <section className="fdOrder">
+                <img src={Dot} alt="" className="dot dot1" />
+                <img src={Dot} alt="" className="dot dot2" />
                     <div>
-                        <img src={Dot} alt="" className="dot1" />
-                        <img src={Dot} alt="" className="dot2" />
                         <h2>Order Food Near You</h2>
-                        <p>check out the trendy places</p>
+                        <p>check out the trendy places people are ordering from</p>
                     </div>
+                    
                     <div className="locator">
                         <form onSubmit={this.getUserLocation}>
                             <input type="text" value={this.state.location} placeholder="enter your location" onChange={this.userLocation} />
-                            <button type="submit">Find Me</button>
+                            <button type="submit">Check</button>
                         </form>
                     </div>
-                    <OrderFood />
+                    <OrderFood /><br/>
                     <Link to="/menu"><button>View More</button></Link>
                 </section>
                 <section className="cusrev">
                     <div className="ads">
                         <div className="message">COMING SOON</div>
                     </div>
-                    <div className="review">
-                        <div className="btns">
-                            <button className="prev" onClick={() => this.showSlides(slideIndex += -1)}>&#10094;</button>
-
-                            <button className="next" onClick={() => this.showSlides(slideIndex += 1)}>&#10095;</button>
-                        </div>
-                        <div className="slider">
-                            <h3>What Customer say about us</h3>
-                            <ul>
-                                <li className="mySlides">
-                                    The food was absolutely wonderful and the awesome presentation was indeed
-                                    a sight to behold
-                    </li>
-                                <li className="mySlides">
-                                    The food was delicous and i plan to patronize a lot more times in
-                                    the nearest future
-                    </li>
-                                <li className="mySlides">
-                                    Good customer service, sectacular food and a very hygenic package. What else
-                                    could i ask for.
-                    </li>
-                            </ul>
-                            <Link to="/comments"> <button>Comment</button></Link>
-                        </div>
-                    </div>
+                    <CustomerReview />
                 </section>
                 <section className="footer">
                     <div className="patner">
-                        <b>
+                        <p>
                             Are you a restaurant owner? Do you sell food and need a way to deliver to
                             customers? Do you own a vehicle and intrested in goods delivery?
                             Do you enjoy cooking?<br />
                             Then
-                        </b><br />
+                        </p><br/>
                         <Link to="/patner"> <button>Partner With Us </button></Link>
                     </div>
                     <div className="newsletter">
@@ -184,7 +131,7 @@ class home extends Component {
                         <p>Connect with us for update and offers
                         </p>
                         <form onSubmit={this.subscribed}>
-                            <input type="email" placeholder="email address" value={this.state.subscribe} onChange={this.subscribe} />
+                            <input type="email" placeholder="email address" value={this.state.subscribe} onChange={this.subscribe} required />
                             <button type="submit">suscribe</button>
                         </form>
                     </div>

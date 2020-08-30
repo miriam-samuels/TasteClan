@@ -1,13 +1,21 @@
-.body{
+body{
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
-.body div h2{
+body div h2{
     color: #fe724e;
     text-align: center;
-    margin-top: 30px;
+    font-size: 15px;
 }
+body button{
+    padding: 10px 23px;
+    font-size: 11px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+/* MENU BAR */
 .menuBar{
     position: fixed;
     top: 0%;
@@ -19,26 +27,23 @@
     display: inline-block;
 }
 .menuBar .logo{
-    width: 80px;
-    margin: 5px 0px 1px 0px;
+    width: 60px;
+    height: 32px;
+    margin: 5px;
 }
 .menuBar .cart{
     float: right;
-    margin: 6px 5px 0px 5px;
 }
 .cart button{
-    padding: 8px 10px;
+    margin: 10px 15px;
     border: none;
-    border-radius: 5px;
     background-color: #282B30;
     color: #fff;
-    font-size: 15px;
 }
  .navBar .drpBtn{
     width: 35px;
-    margin: 0px 8px;
+    margin: 0px 10px;
 }
-
 .navBar ul {
     position: absolute;
     list-style-type: none;
@@ -48,29 +53,31 @@
     display: none;
 }
 .navBar ul li{
-    display: block;
     margin-bottom: 1px;
-    padding: 8px;
+    padding: 10px;
     background-color: #fff;
 }
 .navBar ul li a{
+    display: block;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
     color: #fe724e;
 }
-
 .navBar ul li:hover{
     background-color: #2B2830;
 }
+
+/* HERO IMAGE */
 .hero{
     position: relative;
     display: block;
     background-image: url("../pictures/HERO_BG.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 500px;
+    height: 600px;
 }
 .hero::before, .ads::before{
     content: "";
@@ -93,110 +100,177 @@
 }
 .top .hero .heroWord p{
     animation: zoom 3s linear;
-    font-weight: bolder;
+    font-size: 11px;
 }
+@keyframes zoom {
+    from {
+      transform: scale(0.5);
+      
+    }
+    to {
+      transform: scale(1);
+    }
+  }
 .hero button{
-    padding: 8px 15px;
     border: none;
-    border-radius: 5px;
     background-color: #fe724e;
     color: #fff;
-    font-size: 15px;
 }
 
-@keyframes zoom {
-  from {
-    transform: scale(0.5);
-    
-  }
-  to {
-    transform: scale(1);
-  }
-}
+
+/* HOW IT WORKS SECTION  */
 .howItWorks {
     position: relative;
+    margin: 2em 0px;
+}
+.howItWorks .process{
+    width: 95%;
+    margin: 3em auto;
 }
 .howItWorks .process figure{
-    margin: 25px 15px ;
+    box-shadow: 0.1px 0.1px 5px 0.1px #d8d8d8;   
+    display: inline-block;
+    width: 43%;
+    margin: 10px;
+    text-align: center;
+    vertical-align: top;
 }
 .howItWorks .process figure img{
-    box-shadow: 0.1px 0.1px 5px 0.1px #d8d8d8;   
-    width: 60px;
-    height: 70px;
+    width: 40px;
+    height: 50px;
     padding: 5px;
 }
-.howItWorks .process figcaption{
-    float: right;
-    width: 60%;
+.howItWorks .process figcaption b{
+    color: #fe724e;
+    font-size: 12px;
 } 
 .howItWorks .process figcaption p{
-    margin: 0px ;
+    margin: 0px 0px 15px 0px ;
+    font-size: 11px;
+    line-height: 25px;
+    color: rgb(109, 101, 101);
+}
+
+/* TOP RESTAURANT SECTION  */
+.topRes{
+    margin: 3em 0;
+}
+.topRes h2{
+    color: #fe724e;
+    text-align: center;
+    font-size: 16px;
 }
 .topRes .slider{
-    width: 90%;
-    margin: 20px auto; 
+    position: relative;
+    width: 85%;
+    border: 2px solid #fe724e;
+    margin: 8px auto; 
+    padding: 0 5px;
+    border-radius: 10px;
+
+}
+.topRes .slider div{
+    padding: 10px;
+    overflow-x: hidden;  
+    /* scroll-behavior: smooth;  */
+    /* scrollbar-width: none;  */
 }
 .topRes .slider ul{
-    white-space: nowrap;
+    display: grid;
+    gap: 16px;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
     padding: 0px;
-    border: 2px solid #fe724e;
-    border-radius: 5px;
-    overflow-x: auto;  
+}
+.topRes .prev , .topRes .next{
+    font-size: 15px;
+    color: #fe724e;
+    background-color: #fff;
+    padding: 20px 8px;
+    z-index: 0;
+}
+.topRes .prev{
+    left: 0%;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.topRes .next{
+    right: 0%;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
 }
 .topRes .slider ul li {
-    width: 100px;
     text-align: center;
-    display: inline-block;
     list-style-type: none;
-    margin:14px 10px;
     background-color: #fe724e;
-    padding: 0px 2px;
     border-radius: 5px;
 }
 .topRes .slider ul li a{
+    display: block;
+    width: 120px;
     color: #ffffff;
     text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
 }
 .topRes .slider ul li a b{
     font-size: 40px;
-}
-.dot1{
-    width: 38px;
+    background-image: linear-gradient(to right, #ffc42b,rgb(250, 184, 250), #4ebbfe);
+    background-clip: text;
+    color: transparent;
+} 
+.dot{
+    width: 50px;
     height: 40px;
     position: absolute;
+}
+.dot1{
     left : 0%;
 }
 .dot2{
-    width: 38px;
-    height: 40px;
-    position: absolute;
     right : 0%;
 }
+
+/* ORDER FOOD SECTION  */
 .fdOrder{
     text-align: center;
+}
+.fdOrder h2{
+    margin-bottom: 0px;
 }
 .fdOrder p{
     color: #fe724e;
     line-height: 0;
-    font-size: 13px;
+    font-size: 8px;
+    font-weight: bold;
 }
-.fdOrder .locator input,.fdOrder .locator button{
-    padding: 7px;
-    margin-left: 10px;
+.fdOrder .locator{
+    margin: 25px 0;
+}
+.fdOrder .locator input{
+    padding: 10px ;
     border-radius: 5px;
+    margin: 0px 10px;
+    font-size: 11px;
+    font-weight: bold;
     border: 1px solid #d8d8d8;
 }
 .fdOrder .locator button{
+    box-shadow: 0px 2px 2px 2px #e6e4e4;   
+    border: none;
     background-color: #fe724e;
+    font-weight: bold;
+    padding: 9px 25px;
 }
 .fdOrder figure{
     box-shadow: 0.3px 0.3px 5px 0.3px #b8b6b6;   
     margin: 30px auto;
-    width: 85%;
+    width: 250px;
 }
 .fdOrder figure img{
     width: 100%;
-    height: 200px;
+    height: 160px;
     filter: brightness(0.8);
 }
 
@@ -213,8 +287,9 @@
     background-color:#fe724e;
     color: #fff;
     border: none;
-    padding: 10px;
 }
+
+/* CUSTOMER REVIEW AND ADS SECTION  */
 .cusrev{
     margin: 30px 0px 0px 0px;
 }
@@ -230,12 +305,16 @@
 .ads .message{
     position: relative;
     margin: auto;
-    width: 75px;
-    border-radius: 50%;
+    width: 110px;
+    /* background-color: #ffc42b; */
+    /* border-radius: 50%; */
+    /* padding: 30px 20px; */
     text-align: center;
-    background-color: #ffc42b;
+    font-size: 25px;
     font-weight:bolder;
-    padding: 30px 20px;
+    background-image: linear-gradient(to left,violet,indigo,blue,green,yellow,orange,red);
+    background-clip: text;
+    color: transparent;
 }
 
 .cusrev div .slider{
@@ -243,6 +322,7 @@
     height: 205px;
     text-align: left;
     background-color: #fe724e;
+
 }
 .cusrev div h3{
     margin: 0;
@@ -259,29 +339,43 @@
 .cusrev div .slider ul li{
     list-style-type: none;
     margin: auto;
-    padding: 10px 10px;
     width: 80%;
-    height: 75px;
-    border-radius: 9px;
     color: #fff;
     text-decoration: none;
-    border: 2px solid #fff;
+    border: none;
 } 
+.cusrev div .slider ul li b{
+    display: block;
+    margin: auto;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    height: 50px;
+    padding: 10px;
+    margin: 0px 10px;
+    font-size: 12px;
+}
+.cusrev div .slider ul li b.hidden{
+    display: none;
+}
+
 .cusrev div .slider  button{
     background-color: #fff;
     color: #fe724e;
     border: none;
-    margin: 5px 0px;
+    margin: 2em 0px;
     padding: 5px;
     font-weight: bold;
 }
+
+/* PREV AND NEXT BUTTON  */
 .prev,.next{
     background-color:transparent;
+    cursor: pointer;
+    padding:3px;
     border: none;
     color:#fff;
+    font-size: 15px;
     font-weight: bold;
-    min-width: 20px;
-    min-height: 40px;
     position: absolute;
     top: 50%;
     z-index: 1;
@@ -291,13 +385,17 @@
     background: #000;
 }
 .prev{
-    text-align: left;
-    left: 0;
+    left: 2%;
+    transform: translate(0%,-50%);
+
 }
 .next{
-    text-align: right;
-    right: 0;
+    right: 2%;
+    transform: translate(0%,-50%);
+
 }
+
+/* FOOTER SECTION  */
 section.footer{
     text-align: center;
 
@@ -311,25 +409,29 @@ section.footer{
 .patner{
     background-color: #ffc42b;
 }
-/* .footer div.patner b{
-    width: 310px;
-} */
+.patner p{
+    width: 300px;
+    margin: auto;
+    font-weight: bolder;
+}
 .footer .patner button{
     background-color:#282B30;
     border: none;
-    border-radius:5px ;
     color: #fff;
-    padding: 8px;
+    padding: 8px 15px;
 }
 .footer .newsletter{
     line-height: 10px;
     background-color: #fff;
-
+}
+.newsletter p{
+    font-size: 11px;
 }
 .footer .newsletter button{
     background-color:#fe724e;
     color: #fff;
     border: none;
+    border-radius: 5px;
     padding: 8px 10px;
 }
 .footer div input{
@@ -338,6 +440,8 @@ section.footer{
     border: 1px solid #d8d8d8;
     margin-right: 10px;
 }
+
+/* QUICK LINKS AND THE REST  */
 .credits{
     background-color: #fe724e;
     padding: 10px 5px;
@@ -346,7 +450,7 @@ section.footer{
 .credits .credit{
     vertical-align: text-top;
     margin-top: auto;
-    font-size: 12px;
+    font-size: 11px;
     padding: 0;
 }
 .credits .links{
@@ -381,65 +485,68 @@ section.footer{
 .credits .lg img{
     width: 100px;
 }
+.credits .lg b{
+    margin-left: 20px;
+}
 .credits b{
     color: #fff;
-    font-size: 15px;
+    font-size: 12px;
 }
-.credits small{
+.credits p{
     color: #fff;
     font-size: 10px;
 }
 
 
-/* for bigger screen */
+/* FOR BIGGER SCREENS */
 @media (min-width:600px){
-    .navBar .drpBtn{
-        display: none;
-    }
-    .navBar ul{
-        display: block;
-        top: 10%;
-        left: 13%;
-    }
-    .navBar ul li{
-        display: inline-block;
-        background-color: transparent;
-    }
-    .navBar ul li a{
-        color: #fff;
-        font-size: 18px;
-    }
-    .cart button{
-        font-size: 17px;
+    .dot{
+        width: 90px;
+        height: 50px;
     }
     .top .hero .heroWord h1{
         font-size: 32px;
     }
     .top .hero .heroWord p{
-        font-size: 21px;
+        font-size: 15px;
     }
     .howItWorks {
         position: relative;
     }
     .howItWorks .process{
         background-color: #fe724e;
-        padding: 25px 10px;
+        width: 98%;
+        padding: 3em 5px;
+    }
+    .howItWorks .process div{
+        text-align: center;
+        width: 95%;
+        margin: auto;
     }
     .howItWorks .process figure{
-        width: 24.5%;
-        display: inline-block;
-        margin:  0px ;
-        text-align: center;
-        vertical-align: top;
-
+        width: 23%;
+        box-shadow: none;
+        margin: 0 5px;
     }
     .howItWorks .process figure img{
-        box-shadow: none; 
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         background-color: #fff;
-        border-radius: 100px;
-        padding: 20px;
+        border-radius: 50%;
+        padding: 10px;
+    }
+    .howItWorks .process figcaption{
+        width: 98%;
+    } 
+    .howItWorks .process figcaption b{
+        font-size: 15px;
+        color: #fff;
+    }
+    .howItWorks .process figcaption p{
+        margin: 0px ;
+        font-size: 11px;
+        line-height: 25px;
+        color: #fff;
     }
     .topRes .slider{
         width: 80%;
@@ -448,24 +555,67 @@ section.footer{
     .topRes .slider ul li {
         width: 150px;
     }
-    .howItWorks .process figcaption{
-        float: none;
-        width: 98%;
-        color: #fff;
-    } 
+    .topRes .prev , .topRes .next{
+        padding: 5px;
+    }
     .fdOrder figure{
         display: inline-block;
         margin: 30px 10px;
         width: 29%;
         vertical-align: top;
     }
+    .credits .credit{
+        display: inline-block;
+        width: 33%;
+        text-align: left;
+    }
+    .credits .links .link{
+        width: 50%;
+        text-align: left;
+
+    }
     .footer div p,.footer div b,.cusrev {
-        font-size: 20px;
+        font-size: 12px;
+    }
+    .cusrev div .slider ul li b{
+        vertical-align: top;
+        display: inline-block;
+        width: 43%;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        padding:  10px;
+        margin: 0px 10px;
+    }
+    .cusrev div .slider ul li b.hidden{
+        display: inline-block;
+        width: 43%;
+        margin:  0;
+
+    }
+    .prev{
+        left: 4%;
+    }
+    .next{
+        right: 4%;
     }
 }
 @media (min-width:750px){
+    .navBar .drpBtn{
+        display: none;
+    }
     .navBar ul{
-        left: 23%;
+        display: block;
+        top: 10%;
+        left: 19%;
+    }
+    .navBar ul li{
+        display: inline-block;
+        background-color: transparent;
+        margin: 0px 2px;
+    }
+    .navBar ul li a{
+        color: #fff;
+        font-size: 15px;
     }
     .cusrev div .slider ul li{
         width:75%;
@@ -474,18 +624,52 @@ section.footer{
         width: 160px;
     }
 }
+@media (min-width:1000px){
+    .navBar ul{
+        left: 21%;
+    }
+    .navBar ul li{
+        margin: 0px 10px;
+    }
+    .howItWorks .process figure img{
+        width: 100px;
+        height: 100px;
+    }
+}
 @media (min-width:1200px){
     .navBar ul{
-        left: 33%;
+        left: 29%;
     }
     .cusrev div .slider ul li{
-        width:70%;
+        width:60%;
     }
     .topRes .slider{
-        width: 70%;
+        width: 50%;
         margin: 20px auto; 
     }
     .topRes .slider ul li {
         width: 174px;
     }
+    .prev{
+        left: 10%;
+    }
+    .next{
+        right: 10%;
+    }
 }
+    /* @media (min-width:2000px){
+        .navBar ul{
+            left: 29%;
+        }
+        .cusrev div .slider ul li{
+            width:60%;
+        }
+        .topRes .slider{
+            width: 60%;
+            margin: 20px auto; 
+        }
+        .topRes .slider ul li {
+            width: 174px;
+        }
+}
+ */

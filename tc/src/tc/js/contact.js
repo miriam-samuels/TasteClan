@@ -11,7 +11,7 @@ function contact() {
             <p>Call us</p>
             <b>090xxxxxxxxxx, 080xxxxxxxxx, 081xxxxxxxxxxx, 070xxxxxxxxxx</b>
             <p>Email Us</p>
-            <b>info@tasteclan.com</b><br/>
+            <b>info.tasteclan@gmail.com</b><br/>
             <b>tasteclan@gmail.com</b>
             <p>Address</p>
             <b>blah blah blah blah blah blah blah blah blah blah blah blah </b>

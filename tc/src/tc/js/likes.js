@@ -37,7 +37,7 @@ export class likes extends Component {
             textAlign: "left",
             backgroundColor:"transparent",
             border:"none",
-            width:"80%",
+            width:"90%",
             
         }
         const em={
@@ -47,7 +47,7 @@ export class likes extends Component {
         }
         return (
             <>
-        <span onClick={(e) => this.inc(6)}style={styles}>&#8902;<em style={em}>{this.state.likes} likes</em></span> 
+        <span onClick={(e) => this.inc(6)}style={styles}>&hearts;<em style={em}>{this.state.likes} likes</em></span> 
                 
             </>
         )
