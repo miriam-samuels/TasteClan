@@ -88,21 +88,21 @@ class addRestaurant extends Component {
                 </div>
                 <div className="addProcess side">
                     <h2>How it Works</h2>
-                    <img src={FillForm} alt="" />
+                    <img src={FillForm} alt="fill" />
                     <br /> <b>Fill Form</b><br />
                     <p>blah blah blah blah blah blah
                     blah blah blah blah blah blah blah blah
                     blah blah blah blah blah blah blah blah
                     blah blah blah blah blah blah blah blah
                     </p>
-                    <img src={SendInfo} alt="" />
+                    <img src={SendInfo} alt="send" />
                     <br /> <b>Send Information</b><br />
                     <p>blah blah blah blah blah blah
                     blah blah blah blah blah blah blah blah
                     blah blah blah blah blah blah blah blah
                     blah blah blah blah blah blah blah blah
                     </p>
-                    <img src={Verify} alt="" />
+                    <img src={Verify} alt="verify" />
                     <br /> <b>Verify Information</b><br />
                     <p>blah blah blah blah blah blah
                     blah blah blah blah blah blah blah blah

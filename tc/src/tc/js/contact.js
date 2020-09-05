@@ -18,12 +18,12 @@ function contact() {
             </div>
             <div className="msg">
                 <form>
-                    <label>Name</label><br/>
-                    <input type="text" placeholder="enter your name" />
-                   <br/> <label>Email Address</label><br/>
-                    <input type="email" placeholder="enter your email address" />
-                    <br/><label>Your Message</label><br/>
-                    <textarea placeholder="enter your message" rows="17"></textarea>
+                    <label htmlFor="name">Name</label><br/>
+                    <input type="text" placeholder="enter your name" id="name"/>
+                   <br/> <label htmlFor="email">Email Address</label><br/>
+                    <input type="email" placeholder="enter your email address" id="email" />
+                    <br/><label htmlFor="msg">Your Message</label><br/>
+                    <textarea placeholder="enter your message" rows="17" id="msg"></textarea>
                     <button type="submit"> Submit</button>
                 </form>
             </div>

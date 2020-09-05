@@ -12,12 +12,12 @@ function footer() {
             <div className="credit lg">
                 <img src={Icon} alt="Logo" className="logo" /><br/>
                 <b>Healthy You</b>
-                <ul className="connect"><br/>
-                <li><Link to="/"><img src={Fb} alt=""/></Link></li>
-                <li><Link to="/menu"><img src={Ig} alt=""/></Link></li>
-                <li><Link to="/blog"><img src={Tweet} alt=""/></Link></li>
-                <li><Link to="/about"><img src={Whatsapp} alt=""/></Link></li>
-                </ul>
+                <div className="connect"><br/>
+                <span><Link to="/"><img src={Fb} alt=""/></Link></span>
+                <span><Link to="/menu"><img src={Ig} alt=""/></Link></span>
+                <span><Link to="/blog"><img src={Tweet} alt=""/></Link></span>
+                <span><Link to="/about"><img src={Whatsapp} alt=""/></Link></span>
+                </div>
             </div>
             <div className="credit links">
             <div className="link">
